@@ -1,4 +1,5 @@
 import locale
+
 locale.setlocale(locale.LC_MONETARY, 'pt_BR.UTF-8')
 
 # PERGUNTAS #
@@ -19,4 +20,4 @@ valorTotal =  float(input(perguntaValorTotal))
 valorForamatado = locale.currency(valorTotal, grouping=True, symbol=False)
 
 print("Voce deseja pagar", nomeFavorecido, "o valor de R$", valorForamatado, ".")
-print("Banco: ", bancoFavorecido, "AG: ", agenciaFavorecido, "CC: ", contaFavorecido, ".")
+print("Banco:", bancoFavorecido, "AG:", agenciaFavorecido, "CC:", contaFavorecido, ".")
